@@ -1,0 +1,14 @@
+<div class="widgets">
+  <div class="card" *ngFor="let city of weatherReport$ | async">
+    <div
+      class="card-body"
+      [routerLink]="['/details', city.id]"
+      [state]="{ tempe: city?.main.temp }"
+    >
+      <h3 class="card-title city">{{ city?.name }}</h3>
+      <h5 class="card-text">Temperature : {{ city?.main?.temp }}&#8451;</h5>
+      <h5 class="card-text">Sunrise : {{ city?.sys?.sunrise | moment }}</h5>
+      <h5 class="card-text">Sunset : {{ city?.sys?.sunset | moment }}</h5>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="city-weather">
+  <!-- <h5 class="card-text"></h5> -->
+  <button class="btn btn-secondary" [routerLink]="['']">&laquo; Back</button>
+  <div class="container p-3 my-3 bg-dark text-white">
+    <h1>
+      City : {{ cityName }},
+      <span class="temperature">{{ cityTemp }}&#8451;</span>
+    </h1>
+  </div>
+  <div class="row">
+    <div class="col" *ngFor="let city of cityForecast">
+      <h3>Date : {{ city.date }}</h3>
+      <h3>Time : 9AM</h3>
+      <h3>
+        Sea Level : <span class="sea-level">{{ city.main.sea_level }}</span>
+      </h3>
+    </div>
+  </div>
+</div>
