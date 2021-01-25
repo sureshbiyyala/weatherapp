@@ -2,10 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.6.
 
-To start the project, download the repo and do npm install in the project folder and then run 'npm start'  command.
-Once build is successfully, Open 'http://localhost:4200' in the browser.
-
-## Development server
+To start the project, download the repo and do `npm install` in the project folder.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
